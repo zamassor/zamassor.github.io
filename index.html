@@ -3,7 +3,9 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>ml absor - Gaming Portfolio</title>
+    <title>jago bet gilaa</title>
+
+    <!-- Bootstrap CSS -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -14,38 +16,33 @@
     <!-- AOS Animation Library -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Orbitron:wght@400;700;900&display=swap"
-      rel="stylesheet"
-    />
-
     <!-- Font Awesome -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
 
-    <!-- Particles JS -->
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Orbitron:wght@400;500;600;700;800;900&display=swap"
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.css"
     />
 
     <!-- My CSS -->
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <!-- Particles Background -->
-    <div id="particles-js"></div>
-
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-glass fixed-top">
+    <nav
+      class="navbar navbar-expand-lg shadow-lg fixed-top navbar-glass"
+      id="mainNav"
+    >
       <div class="container">
-        <a class="navbar-brand brand-text" href="#">
-          <i class="fas fa-gamepad"></i> zama
+        <a class="navbar-brand brand-logo" href="#">
+          <i class="fas fa-gamepad me-2"></i>
+          <span class="brand-text">zama</span>
         </a>
         <button
           class="navbar-toggler"
@@ -61,23 +58,32 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#home">
-                <i class="fas fa-home"></i> Home
+              <a
+                class="nav-link nav-link-custom active"
+                aria-current="page"
+                href="#"
+              >
+                <i class="fas fa-home me-1"></i>Home
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#about">
-                <i class="fas fa-user"></i> About
+              <a class="nav-link nav-link-custom" href="#about">
+                <i class="fas fa-user me-1"></i>About
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#achievements">
-                <i class="fas fa-trophy"></i> Achievements
+              <a class="nav-link nav-link-custom" href="#stats">
+                <i class="fas fa-chart-line me-1"></i>Stats
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#contact">
-                <i class="fas fa-envelope"></i> Contact
+              <a class="nav-link nav-link-custom" href="#achievements">
+                <i class="fas fa-trophy me-1"></i>Achievements
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-link-custom" href="#contact">
+                <i class="fas fa-envelope me-1"></i>Contact
               </a>
             </li>
           </ul>
@@ -87,41 +93,64 @@
     <!-- Akhir Navbar -->
 
     <!-- Jumbotron -->
-    <section id="home" class="jumbotron text-center">
-      <div class="container">
-        <div
-          class="profile-image-wrapper"
+    <section class="jumbotron text-center">
+      <div class="hero-content">
+        <img
+          src="img/absor-3.jpeg"
+          alt="Absor"
+          width="250"
+          class="rounded-circle img-thumbnail profile-img"
           data-aos="zoom-in"
           data-aos-duration="1000"
-        >
-          <img src="img/absor 3.jpeg" alt="Absor" class="profile-image" />
-          <div class="glow-ring"></div>
-        </div>
+        />
         <h1
-          class="display-4 hero-title"
+          class="display-3 hero-title"
           data-aos="fade-up"
           data-aos-delay="200"
         >
-          <span id="typed-name"></span>
+          <span class="gradient-text">guweh</span>
         </h1>
         <p class="lead hero-subtitle" data-aos="fade-up" data-aos-delay="400">
-          <i class="fas fa-mobile-alt"></i> MLBB Tag:
-          <span class="tag-highlight">zama</span>
+          <i class="fas fa-gamepad me-2"></i>MLBB Tag:
+          <span class="highlight-text">zama</span>
         </p>
-        <div class="social-links" data-aos="fade-up" data-aos-delay="600">
-          <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
-          <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
-          <a href="#" class="social-icon"><i class="fab fa-twitch"></i></a>
-          <a href="#" class="social-icon"><i class="fab fa-discord"></i></a>
+        <div class="hero-badges" data-aos="fade-up" data-aos-delay="600">
+          <span class="badge-custom"
+            ><i class="fas fa-star"></i> Mythical Immortal</span
+          >
+          <span class="badge-custom"
+            ><i class="fas fa-trophy"></i> Top 8 Indonesia</span
+          >
+          <span class="badge-custom"
+            ><i class="fas fa-fire"></i> Harith Main</span
+          >
         </div>
-        <div class="scroll-indicator" data-aos="fade-up" data-aos-delay="800">
-          <a href="#about">
-            <i class="fas fa-chevron-down"></i>
+        <div class="social-links" data-aos="fade-up" data-aos-delay="800">
+          <a
+            href="https://www.instagram.com/sorzama/"
+            target="_blank"
+            class="social-icon"
+          >
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="#" class="social-icon">
+            <i class="fab fa-youtube"></i>
+          </a>
+          <a href="#" class="social-icon">
+            <i class="fab fa-twitch"></i>
+          </a>
+          <a href="#" class="social-icon">
+            <i class="fab fa-discord"></i>
           </a>
         </div>
       </div>
-      <!-- Magical Time Rift Divider -->
-      <div class="magic-divider rift-divider"></div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#ffffff"
+          fill-opacity="1"
+          d="M0,192L48,160C96,128,192,64,288,32C384,0,480,0,576,42.7C672,85,768,171,864,186.7C960,203,1056,149,1152,138.7C1248,128,1344,160,1392,176L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+        ></path>
+      </svg>
     </section>
     <!-- Akhir Jumbotron -->
 
@@ -137,60 +166,152 @@
             <div class="title-underline"></div>
           </div>
         </div>
-        <div class="row justify-content-center g-4">
-          <div class="col-lg-5 col-md-6">
-            <div class="about-card" data-aos="fade-right" data-aos-delay="100">
-              <div class="about-icon">
+        <div class="row align-items-center mb-5">
+          <div class="col-md-6" data-aos="fade-right" data-aos-delay="200">
+            <div class="about-card">
+              <div class="card-icon">
                 <i class="fas fa-gamepad"></i>
               </div>
-              <h4>Gaming Journey</h4>
+              <h4>The Beginning</h4>
               <p>
                 I started playing Mobile Legends: Bang Bang since season 6
                 (2017), immediately fallen in love with the game because I also
-                play other MOBA games on PC like Dota 2 or LoL.
+                play other MOBA games on PC like Dota 2 and League of Legends.
               </p>
-              <div class="stat-badge">
-                <i class="fas fa-calendar-alt"></i> Since 2017
-              </div>
             </div>
           </div>
-          <div class="col-lg-5 col-md-6">
-            <div class="about-card" data-aos="fade-left" data-aos-delay="200">
-              <div class="about-icon">
-                <i class="fas fa-trophy"></i>
+          <div class="col-md-6" data-aos="fade-left" data-aos-delay="400">
+            <div class="about-card">
+              <div class="card-icon">
+                <i class="fas fa-magic"></i>
               </div>
-              <h4>Main Hero</h4>
+              <h4>Harith Specialist</h4>
               <p>
                 My journey playing MLBB is so fun. I started playing Harith in
                 2019, and I've been spamming him ever since. My Harith winrate
-                is 64.0% with 1693 matches currently.
+                is
+                <span class="highlight-text">64.0%</span> with
+                <span class="highlight-text">1693 matches</span> currently.
               </p>
-              <div class="stat-badge">
-                <i class="fas fa-chart-line"></i> 64% Win Rate
-              </div>
             </div>
           </div>
         </div>
-
-        <div class="stats-row" data-aos="zoom-in" data-aos-delay="300">
-          <div class="stat-item">
-            <div class="stat-number">1693</div>
-            <div class="stat-label">Matches</div>
+        <div class="row">
+          <div class="col-md-4" data-aos="flip-left" data-aos-delay="200">
+            <div class="feature-box">
+              <div class="feature-icon">
+                <i class="fas fa-crosshairs"></i>
+              </div>
+              <h5>Strategic Mind</h5>
+              <p>Expert in macro gameplay and team coordination</p>
+            </div>
           </div>
-          <div class="stat-item">
-            <div class="stat-number">64%</div>
-            <div class="stat-label">Win Rate</div>
+          <div class="col-md-4" data-aos="flip-left" data-aos-delay="400">
+            <div class="feature-box">
+              <div class="feature-icon">
+                <i class="fas fa-bolt"></i>
+              </div>
+              <h5>Lightning Reflexes</h5>
+              <p>Quick decision making in high-pressure situations</p>
+            </div>
           </div>
-          <div class="stat-item">
-            <div class="stat-number">6+</div>
-            <div class="stat-label">Years</div>
+          <div class="col-md-4" data-aos="flip-left" data-aos-delay="600">
+            <div class="feature-box">
+              <div class="feature-icon">
+                <i class="fas fa-users"></i>
+              </div>
+              <h5>Team Player</h5>
+              <p>Excellent communication and synergy with teammates</p>
+            </div>
           </div>
         </div>
       </div>
-      <!-- Magical Portal Divider -->
-      <div class="magic-divider portal-divider"></div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#d9f7ec"
+          fill-opacity="1"
+          d="M0,32L60,53.3C120,75,240,117,360,154.7C480,192,600,224,720,197.3C840,171,960,85,1080,58.7C1200,32,1320,64,1380,80L1440,96L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"
+        ></path>
+      </svg>
     </section>
     <!-- Akhir About -->
+
+    <!-- Stats Section -->
+    <section id="stats">
+      <div class="container">
+        <div class="row text-center mb-5">
+          <div class="col" data-aos="fade-down">
+            <h2 class="section-title">
+              <span class="title-icon"><i class="fas fa-chart-bar"></i></span>
+              Player Statistics
+            </h2>
+            <div class="title-underline"></div>
+          </div>
+        </div>
+        <div class="row g-4">
+          <div
+            class="col-md-3 col-sm-6"
+            data-aos="zoom-in"
+            data-aos-delay="100"
+          >
+            <div class="stat-card">
+              <div class="stat-icon">
+                <i class="fas fa-trophy"></i>
+              </div>
+              <div class="stat-number" data-target="1693">0</div>
+              <div class="stat-label">Total Matches</div>
+            </div>
+          </div>
+          <div
+            class="col-md-3 col-sm-6"
+            data-aos="zoom-in"
+            data-aos-delay="200"
+          >
+            <div class="stat-card">
+              <div class="stat-icon">
+                <i class="fas fa-percentage"></i>
+              </div>
+              <div class="stat-number" data-target="64">0</div>
+              <div class="stat-label">Win Rate %</div>
+            </div>
+          </div>
+          <div
+            class="col-md-3 col-sm-6"
+            data-aos="zoom-in"
+            data-aos-delay="300"
+          >
+            <div class="stat-card">
+              <div class="stat-icon">
+                <i class="fas fa-star"></i>
+              </div>
+              <div class="stat-number" data-target="8">0</div>
+              <div class="stat-label">Top Rank</div>
+            </div>
+          </div>
+          <div
+            class="col-md-3 col-sm-6"
+            data-aos="zoom-in"
+            data-aos-delay="400"
+          >
+            <div class="stat-card">
+              <div class="stat-icon">
+                <i class="fas fa-calendar"></i>
+              </div>
+              <div class="stat-number" data-target="7">0</div>
+              <div class="stat-label">Years Playing</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#d9f7ec"
+          fill-opacity="1"
+          d="M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,112C672,96,768,96,864,112C960,128,1056,160,1152,165.3C1248,171,1344,149,1392,138.7L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+        ></path>
+      </svg>
+    </section>
+    <!-- Akhir Stats -->
 
     <!-- Achievements -->
     <section id="achievements">
@@ -205,91 +326,85 @@
           </div>
         </div>
         <div class="row g-4">
-          <div class="col-lg-4 col-md-6">
-            <div
-              class="achievement-card"
-              data-aos="flip-left"
-              data-aos-delay="100"
-            >
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="achievement-card">
               <div class="achievement-badge">
                 <i class="fas fa-star"></i>
               </div>
-              <div class="achievement-image-wrapper">
-                <img src="img/ach 1.jpeg" class="achievement-img" alt="ach 1" />
+              <div class="achievement-img-wrapper">
+                <img src="img/ach-1.jpeg" class="card-img-top" alt="ach 1" />
                 <div class="achievement-overlay">
-                  <i class="fas fa-trophy"></i>
+                  <i class="fas fa-search-plus"></i>
                 </div>
               </div>
-              <div class="achievement-body">
-                <h5>Esports Recognition</h5>
-                <p class="achievement-text">
-                  Received the prestigious title "Indonesian Esports Star" and
-                  ranked in "Indonesia Top 8"
+              <div class="card-body">
+                <h5 class="achievement-title">Esports Star</h5>
+                <p class="card-text">
+                  Received the title
+                  <span class="highlight-text">"Indonesian Esports Star"</span>
+                  and <span class="highlight-text">"Indonesia Top 8"</span>.
                 </p>
-                <div class="achievement-tag">
-                  <i class="fas fa-award"></i> Top 8
+                <div class="achievement-date">
+                  <i class="far fa-calendar-alt me-2"></i>2023
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6">
-            <div
-              class="achievement-card"
-              data-aos="flip-left"
-              data-aos-delay="200"
-            >
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="achievement-card">
               <div class="achievement-badge">
                 <i class="fas fa-crown"></i>
               </div>
-              <div class="achievement-image-wrapper">
-                <img src="img/ach 2.jpeg" class="achievement-img" alt="ach 2" />
+              <div class="achievement-img-wrapper">
+                <img src="img/ach-2.jpeg" class="card-img-top" alt="ach 2" />
                 <div class="achievement-overlay">
-                  <i class="fas fa-gem"></i>
+                  <i class="fas fa-search-plus"></i>
                 </div>
               </div>
-              <div class="achievement-body">
-                <h5>Peak Rank</h5>
-                <p class="achievement-text">
-                  First time reaching the highest rank in game "Mythical
-                  Immortal"
+              <div class="card-body">
+                <h5 class="achievement-title">Mythical Immortal</h5>
+                <p class="card-text">
+                  First time reaching the highest rank in game
+                  <span class="highlight-text">"Mythical Immortal"</span>.
                 </p>
-                <div class="achievement-tag">
-                  <i class="fas fa-chess-king"></i> Mythical Immortal
+                <div class="achievement-date">
+                  <i class="far fa-calendar-alt me-2"></i>2022
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6">
-            <div
-              class="achievement-card"
-              data-aos="flip-left"
-              data-aos-delay="300"
-            >
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="500">
+            <div class="achievement-card">
               <div class="achievement-badge">
                 <i class="fas fa-history"></i>
               </div>
-              <div class="achievement-image-wrapper">
-                <img src="img/ach 3.jpeg" class="achievement-img" alt="ach 3" />
+              <div class="achievement-img-wrapper">
+                <img src="img/ach-3.jpeg" class="card-img-top" alt="ach 3" />
                 <div class="achievement-overlay">
-                  <i class="fas fa-archive"></i>
+                  <i class="fas fa-search-plus"></i>
                 </div>
               </div>
-              <div class="achievement-body">
-                <h5>Season Journey</h5>
-                <p class="achievement-text">
-                  Complete seasons archive showcasing consistent performance
-                  throughout multiple seasons
+              <div class="card-body">
+                <h5 class="achievement-title">Seasons Archive</h5>
+                <p class="card-text">
+                  Collection of all competitive seasons and memorable moments
+                  throughout my MLBB journey.
                 </p>
-                <div class="achievement-tag">
-                  <i class="fas fa-calendar-check"></i> All Seasons
+                <div class="achievement-date">
+                  <i class="far fa-calendar-alt me-2"></i>2017 - Present
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <!-- Cosmic Energy Divider -->
-      <div class="magic-divider cosmic-divider"></div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#ffffff"
+          fill-opacity="1"
+          d="M0,192L48,181.3C96,171,192,149,288,149.3C384,149,480,171,576,149.3C672,128,768,64,864,32C960,0,1056,0,1152,37.3C1248,75,1344,149,1392,186.7L1440,224L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+        ></path>
+      </svg>
     </section>
     <!-- Akhir Achievements -->
 
@@ -303,121 +418,210 @@
               Contact Me
             </h2>
             <div class="title-underline"></div>
-            <p class="section-subtitle">Let's connect and play together!</p>
+            <p class="section-subtitle">
+              Let's connect and discuss MLBB strategies or collaborations!
+            </p>
           </div>
         </div>
         <div class="row justify-content-center">
-          <div class="col-lg-8 col-md-10">
+          <div class="col-md-8">
             <div
               class="contact-form-wrapper"
               data-aos="zoom-in"
-              data-aos-delay="100"
+              data-aos-delay="200"
             >
-              <form class="contact-form">
-                <div class="mb-4">
-                  <label for="name" class="form-label">
-                    <i class="fas fa-user"></i> Your Name
-                  </label>
-                  <input
-                    type="text"
-                    class="form-control form-control-modern"
-                    id="name"
-                    placeholder="Enter your name"
-                    required
-                  />
+              <form id="contactForm">
+                <div class="row">
+                  <div class="col-md-6 mb-4">
+                    <div class="form-floating">
+                      <input
+                        type="text"
+                        class="form-control form-control-custom"
+                        id="name"
+                        placeholder="Your Name"
+                        required
+                      />
+                      <label for="name"
+                        ><i class="fas fa-user me-2"></i>Name</label
+                      >
+                    </div>
+                  </div>
+                  <div class="col-md-6 mb-4">
+                    <div class="form-floating">
+                      <input
+                        type="email"
+                        class="form-control form-control-custom"
+                        id="email"
+                        placeholder="Your Email"
+                        required
+                      />
+                      <label for="email"
+                        ><i class="fas fa-envelope me-2"></i>Email</label
+                      >
+                    </div>
+                  </div>
                 </div>
                 <div class="mb-4">
-                  <label for="email" class="form-label">
-                    <i class="fas fa-envelope"></i> Email Address
-                  </label>
-                  <input
-                    type="email"
-                    class="form-control form-control-modern"
-                    id="email"
-                    placeholder="your.email@example.com"
-                    required
-                  />
-                </div>
-                <div class="mb-4">
-                  <label for="pesan" class="form-label">
-                    <i class="fas fa-comment-dots"></i> Message
-                  </label>
-                  <textarea
-                    class="form-control form-control-modern"
-                    id="pesan"
-                    rows="5"
-                    placeholder="Write your message here..."
-                    required
-                  ></textarea>
+                  <div class="form-floating">
+                    <textarea
+                      class="form-control form-control-custom"
+                      id="pesan"
+                      placeholder="Your Message"
+                      style="height: 150px"
+                      required
+                    ></textarea>
+                    <label for="pesan"
+                      ><i class="fas fa-comment me-2"></i>Message</label
+                    >
+                  </div>
                 </div>
                 <div class="text-center">
-                  <button type="submit" class="btn btn-send">
-                    <i class="fas fa-paper-plane"></i> Send Message
+                  <button type="submit" class="btn btn-custom btn-lg">
+                    <i class="fas fa-paper-plane me-2"></i>Send Message
                     <span class="btn-shine"></span>
                   </button>
                 </div>
               </form>
             </div>
-
-            <div
-              class="contact-info-row"
-              data-aos="fade-up"
-              data-aos-delay="200"
-            >
-              <div class="contact-info-item">
-                <i class="fab fa-instagram"></i>
-                <span>@sorzama</span>
+          </div>
+        </div>
+        <div class="row mt-5">
+          <div
+            class="col-md-4 text-center mb-4"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
+            <div class="contact-info-box">
+              <div class="contact-info-icon">
+                <i class="fas fa-map-marker-alt"></i>
               </div>
-              <div class="contact-info-item">
-                <i class="fas fa-mobile-alt"></i>
-                <span>zama</span>
+              <h5>Location</h5>
+              <p>Indonesia</p>
+            </div>
+          </div>
+          <div
+            class="col-md-4 text-center mb-4"
+            data-aos="fade-up"
+            data-aos-delay="400"
+          >
+            <div class="contact-info-box">
+              <div class="contact-info-icon">
+                <i class="fas fa-envelope"></i>
               </div>
+              <h5>Email</h5>
+              <p>contact@zama.com</p>
+            </div>
+          </div>
+          <div
+            class="col-md-4 text-center mb-4"
+            data-aos="fade-up"
+            data-aos-delay="500"
+          >
+            <div class="contact-info-box">
+              <div class="contact-info-icon">
+                <i class="fas fa-gamepad"></i>
+              </div>
+              <h5>MLBB Tag</h5>
+              <p>zama</p>
             </div>
           </div>
         </div>
       </div>
-      <!-- Time Magic Divider -->
-      <div class="magic-divider time-divider"></div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#20c997"
+          fill-opacity="1"
+          d="M0,0L48,32C96,64,192,128,288,154.7C384,181,480,171,576,154.7C672,139,768,117,864,101.3C960,85,1056,75,1152,74.7C1248,75,1344,85,1392,90.7L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+        ></path>
+      </svg>
     </section>
     <!-- Akhir Contact  -->
 
     <!-- Footer -->
-    <footer class="footer-modern text-white text-center">
+    <footer class="footer-custom">
       <div class="container">
-        <div class="footer-content">
-          <div class="footer-social mb-4" data-aos="fade-up">
-            <a
-              href="https://www.instagram.com/sorzama/"
-              class="footer-social-icon"
-            >
-              <i class="fab fa-instagram"></i>
-            </a>
-            <a href="#" class="footer-social-icon">
-              <i class="fab fa-youtube"></i>
-            </a>
-            <a href="#" class="footer-social-icon">
-              <i class="fab fa-twitch"></i>
-            </a>
-            <a href="#" class="footer-social-icon">
-              <i class="fab fa-discord"></i>
-            </a>
+        <div class="row">
+          <div class="col-md-4 mb-4">
+            <h5 class="footer-title">
+              <i class="fas fa-gamepad me-2"></i>zama
+            </h5>
+            <p class="footer-text">
+              Professional MLBB player specializing in Harith. Reaching new
+              heights in the Indonesian esports scene.
+            </p>
+            <div class="footer-social">
+              <a href="https://www.instagram.com/sorzama/" target="_blank"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+              <a href="#"><i class="fab fa-twitch"></i></a>
+              <a href="#"><i class="fab fa-discord"></i></a>
+            </div>
           </div>
-          <p class="footer-text" data-aos="fade-up" data-aos-delay="100">
-            Created with <i class="fas fa-heart pulse"></i> and determination by
-            <a href="https://www.instagram.com/sorzama/" class="footer-link"
-              >zama</a
-            >
-          </p>
-          <p class="footer-copyright" data-aos="fade-up" data-aos-delay="200">
-            © 2024 zama. All rights reserved.
-          </p>
+          <div class="col-md-4 mb-4">
+            <h5 class="footer-title">Quick Links</h5>
+            <ul class="footer-links">
+              <li>
+                <a href="#"><i class="fas fa-chevron-right me-2"></i>Home</a>
+              </li>
+              <li>
+                <a href="#about"
+                  ><i class="fas fa-chevron-right me-2"></i>About</a
+                >
+              </li>
+              <li>
+                <a href="#stats"
+                  ><i class="fas fa-chevron-right me-2"></i>Stats</a
+                >
+              </li>
+              <li>
+                <a href="#achievements"
+                  ><i class="fas fa-chevron-right me-2"></i>Achievements</a
+                >
+              </li>
+              <li>
+                <a href="#contact"
+                  ><i class="fas fa-chevron-right me-2"></i>Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-4 mb-4">
+            <h5 class="footer-title">Newsletter</h5>
+            <p class="footer-text">
+              Subscribe to get updates on tournaments and streams!
+            </p>
+            <form class="newsletter-form">
+              <div class="input-group">
+                <input
+                  type="email"
+                  class="form-control"
+                  placeholder="Your email"
+                />
+                <button class="btn btn-newsletter" type="submit">
+                  <i class="fas fa-paper-plane"></i>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <hr class="footer-divider" />
+        <div class="row">
+          <div class="col text-center">
+            <p class="footer-copyright">
+              <i class="fas fa-heart text-danger"></i> Created with
+              determination by
+              <a
+                href="https://www.instagram.com/sorzama/"
+                target="_blank"
+                class="footer-link-highlight"
+                >Abshar</a
+              >
+              © 2024
+            </p>
+          </div>
         </div>
       </div>
-
-      <!-- Back to Top Button -->
-      <a href="#home" class="back-to-top" id="backToTop">
-        <i class="fas fa-arrow-up"></i>
-      </a>
     </footer>
     <!-- Akhir Footer -->
 
@@ -428,16 +632,10 @@
       crossorigin="anonymous"
     ></script>
 
-    <!-- AOS Animation JS -->
+    <!-- AOS Animation Library -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-    <!-- Particles JS -->
-    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
-
-    <!-- Typed.js for typing animation -->
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-
-    <!-- Custom JS -->
+    <!-- Custom JavaScript -->
     <script src="script.js"></script>
   </body>
 </html>
