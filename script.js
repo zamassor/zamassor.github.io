@@ -122,7 +122,8 @@ const translations = {
     },
 
     // Footer
-    footerText: "Built with passion by Abshar Ilham Zamakhsyari",
+    footerText:
+      "A passionate Front-End Developer with a focus on creating beautiful, responsive, and functional web applications.",
   },
   id: {
     nav: {
@@ -550,8 +551,23 @@ function updateSectionContent(sectionId, tag, title, description) {
 document.addEventListener("DOMContentLoaded", () => setLanguage(currentLang));
 
 langToggle.addEventListener("click", () => {
-  const newLang = currentLang === "en" ? "id" : "en";
-  setLanguage(newLang);
+  // Add transition animation
+  document.body.style.transition = "opacity 0.3s ease";
+  document.body.style.opacity = "0.7";
+
+  setTimeout(() => {
+    const newLang = currentLang === "en" ? "id" : "en";
+    setLanguage(newLang);
+
+    // Fade back in
+    setTimeout(() => {
+      document.body.style.opacity = "1";
+      // Remove transition after animation completes
+      setTimeout(() => {
+        document.body.style.transition = "";
+      }, 300);
+    }, 50);
+  }, 150);
 
   // Restart typing animation (single timer)
   charIndex = 0;
@@ -584,7 +600,17 @@ const navMenu = document.getElementById("navMenu");
 
 if (navToggle) {
   navToggle.addEventListener("click", () => {
-    navMenu.classList.toggle("active");
+    if (navMenu.classList.contains("active")) {
+      // Closing animation
+      navMenu.classList.add("closing");
+      setTimeout(() => {
+        navMenu.classList.remove("active");
+        navMenu.classList.remove("closing");
+      }, 300); // Match animation duration
+    } else {
+      // Opening
+      navMenu.classList.add("active");
+    }
     navToggle.classList.toggle("active");
   });
 }
@@ -603,10 +629,14 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
         behavior: "smooth",
       });
 
-      // Close mobile menu
+      // Close mobile menu with animation
       if (navMenu && navMenu.classList.contains("active")) {
-        navMenu.classList.remove("active");
+        navMenu.classList.add("closing");
         navToggle.classList.remove("active");
+        setTimeout(() => {
+          navMenu.classList.remove("active");
+          navMenu.classList.remove("closing");
+        }, 300);
       }
     }
   });
