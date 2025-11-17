@@ -13,16 +13,17 @@ const translations = {
       contact: "Contact",
     },
     // Hero Section
-    heroGreeting: "Hi, I'm",
-    heroSubtitle: [
-      "Programmer Analyst",
-      "Front-End Developer",
-      "Vue.js Specialist",
-      "Problem Solver",
-      "UI/UX Enthusiast",
-    ],
-    heroDescription:
-      "A passionate Front-End Developer with a focus on creating beautiful, responsive, and functional web applications. I transform designs into clean code and love tackling complex technical challenges.",
+    hero: {
+      greeting: "Hi, I'm",
+      subtitle: [
+        "Programmer Analyst",
+        "Front-End Developer",
+        "Problem Solver",
+        "UI/UX Enthusiast",
+      ],
+      description:
+        "A passionate Front-End Developer with a focus on creating beautiful, responsive, and functional web applications. I transform designs into clean code and love tackling complex technical challenges.",
+    },
     viewProjects: "View Projects",
     contactMe: "Contact Me",
     scrollDown: "Scroll Down",
@@ -132,15 +133,17 @@ const translations = {
       contact: "Kontak",
     },
     // Hero Section
-    heroGreeting: "Halo, Saya",
-    heroSubtitle: [
-      "Front-End Developer",
-      "Spesialis Vue.js",
-      "Problem Solver",
-      "Penggemar UI/UX",
-    ],
-    heroDescription:
-      "Seorang Front-End Developer yang passionate dalam menciptakan aplikasi web yang indah, responsif, dan fungsional. Saya mengubah desain menjadi kode yang bersih dan suka menghadapi tantangan teknis yang kompleks.",
+    hero: {
+      greeting: "Halo, Saya",
+      subtitle: [
+        "Programmer Analyst",
+        "Front-End Developer",
+        "Problem Solver",
+        "Penggemar UI/UX",
+      ],
+      description:
+        "Seorang Front-End Developer yang passionate dalam menciptakan aplikasi web yang indah, responsif, dan fungsional. Saya mengubah desain menjadi kode yang bersih dan suka menghadapi tantangan teknis yang kompleks.",
+    },
     viewProjects: "Lihat Proyek",
     contactMe: "Hubungi Saya",
     scrollDown: "Gulir ke Bawah",
@@ -240,7 +243,8 @@ const translations = {
     },
 
     // Footer
-    footerText: "Dibuat dengan passion oleh Abshar Ilham Zamakhsyari",
+    footerText:
+      "Front-End Developer yang passionate dalam menciptakan pengalaman web yang indah dan fungsional.",
   },
 };
 
@@ -299,7 +303,7 @@ function setLanguage(lang) {
 
   // Update typing animation texts (guard for first run)
   if (typeof typingTexts !== "undefined") {
-    typingTexts = translations[lang].heroSubtitle;
+    typingTexts = translations[lang].hero.subtitle;
   }
 
   // Update all translatable elements
@@ -635,7 +639,7 @@ window.addEventListener("scroll", () => {
 // ===================================
 // TYPING ANIMATION
 // ===================================
-let typingTexts = translations[currentLang].heroSubtitle;
+let typingTexts = translations[currentLang].hero.subtitle;
 let textIndex = 0;
 let charIndex = 0;
 let isDeleting = false;
