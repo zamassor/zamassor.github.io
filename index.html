@@ -55,11 +55,33 @@
           <span></span>
         </button>
         <div class="nav-menu" id="navMenu">
-          <a class="nav-link active" href="#home">Home</a>
-          <a class="nav-link" href="#about">About</a>
-          <a class="nav-link" href="#skills">Skills</a>
-          <a class="nav-link" href="#projects">Projects</a>
-          <a class="nav-link" href="#contact">Contact</a>
+          <a class="nav-link active" href="#home" data-i18n="nav.home">Home</a>
+          <a class="nav-link" href="#about" data-i18n="nav.about">About</a>
+          <a class="nav-link" href="#skills" data-i18n="nav.skills">Skills</a>
+          <a class="nav-link" href="#projects" data-i18n="nav.projects"
+            >Projects</a
+          >
+          <a class="nav-link" href="#contact" data-i18n="nav.contact"
+            >Contact</a
+          >
+        </div>
+        <div class="nav-actions">
+          <button
+            id="themeToggle"
+            class="icon-btn"
+            aria-label="Toggle theme"
+            title="Toggle theme"
+          >
+            <i class="fas fa-moon"></i>
+          </button>
+          <button
+            id="langToggle"
+            class="pill-btn"
+            aria-label="Toggle language"
+            title="Toggle language"
+          >
+            EN
+          </button>
         </div>
       </div>
     </nav>
@@ -70,7 +92,7 @@
       <div class="container">
         <div class="hero-content">
           <div class="hero-text" data-aos="fade-right" data-aos-duration="1000">
-            <p class="hero-greeting">Hi, I'm</p>
+            <p class="hero-greeting" data-i18n="hero.greeting">Hi, I'm</p>
             <h1 class="hero-title">
               Abshar Ilham<br />
               <span class="gradient-text">Zamakhsyari</span>
@@ -79,18 +101,26 @@
               <span class="typing-text"></span>
               <span class="cursor">|</span>
             </div>
-            <p class="hero-description">
+            <p class="hero-description" data-i18n="hero.description">
               A passionate Front-End Developer with a focus on creating
               beautiful, responsive, and functional web applications. I
               transform designs into clean code and love tackling complex
               technical challenges.
             </p>
             <div class="hero-buttons">
-              <a href="#projects" class="btn btn-primary">
+              <a
+                href="#projects"
+                class="btn btn-primary"
+                data-i18n="cta.view_projects"
+              >
                 <i class="fas fa-briefcase"></i>
                 View Projects
               </a>
-              <a href="#contact" class="btn btn-secondary">
+              <a
+                href="#contact"
+                class="btn btn-secondary"
+                data-i18n="cta.contact_me"
+              >
                 <i class="fas fa-envelope"></i>
                 Contact Me
               </a>
@@ -645,7 +675,7 @@
 
         <div class="footer-bottom">
           <p>
-            &copy; 2024 Abshar Ilham Zamakhsyari. Built with passion and
+            &copy; 2025 Abshar Ilham Zamakhsyari. Built with passion and
             dedication.
           </p>
         </div>
