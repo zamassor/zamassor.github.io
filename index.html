@@ -3,16 +3,12 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>jago bet gilaa</title>
-    <link rel="icon" href="img/favicon.svg" type="image/svg+xml" />
-
-    <!-- Bootstrap CSS -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
+    <title>Zama - Portfolio</title>
+    <meta
+      name="description"
+      content="Portfolio of Abshar Ilham Zamakhsyari (Zama), a Front-End Developer specializing in Vue.js and modern web technologies."
     />
+    <link rel="icon" href="img/logo.png" type="image/png" />
 
     <!-- AOS Animation Library -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
@@ -27,7 +23,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Orbitron:wght@400;500;600;700;800;900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
 
@@ -35,603 +31,627 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <!-- Animated Background -->
+    <div class="animated-bg">
+      <div class="gradient-orb orb-1"></div>
+      <div class="gradient-orb orb-2"></div>
+      <div class="gradient-orb orb-3"></div>
+    </div>
+
     <!-- Navbar -->
-    <nav
-      class="navbar navbar-expand-lg shadow-lg fixed-top navbar-glass"
-      id="mainNav"
-    >
+    <nav class="navbar" id="mainNav">
       <div class="container">
-        <a class="navbar-brand brand-logo" href="#">
-          <i class="fas fa-gamepad me-2"></i>
-          <span class="brand-text">zama</span>
+        <a class="navbar-brand" href="#">
+          <span class="brand-text">Zama</span>
+          <span class="brand-dot">.</span>
         </a>
         <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
+          class="nav-toggle"
+          id="navToggle"
           aria-label="Toggle navigation"
         >
-          <span class="navbar-toggler-icon"></span>
+          <span></span>
+          <span></span>
+          <span></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a
-                class="nav-link nav-link-custom active"
-                aria-current="page"
-                href="#"
-              >
-                <i class="fas fa-home me-1"></i>Home
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link nav-link-custom" href="#about">
-                <i class="fas fa-user me-1"></i>About
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link nav-link-custom" href="#stats">
-                <i class="fas fa-chart-line me-1"></i>Stats
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link nav-link-custom" href="#achievements">
-                <i class="fas fa-trophy me-1"></i>Achievements
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link nav-link-custom" href="#contact">
-                <i class="fas fa-envelope me-1"></i>Contact
-              </a>
-            </li>
-          </ul>
+        <div class="nav-menu" id="navMenu">
+          <a class="nav-link active" href="#home">Home</a>
+          <a class="nav-link" href="#about">About</a>
+          <a class="nav-link" href="#skills">Skills</a>
+          <a class="nav-link" href="#projects">Projects</a>
+          <a class="nav-link" href="#contact">Contact</a>
         </div>
       </div>
     </nav>
-    <!-- Akhir Navbar -->
+    <!-- End Navbar -->
 
-    <!-- Jumbotron -->
-    <section class="jumbotron text-center">
-      <div class="hero-content">
-        <img
-          src="img/absor-3.jpeg"
-          alt="Absor"
-          width="250"
-          class="rounded-circle img-thumbnail profile-img"
-          data-aos="zoom-in"
-          data-aos-duration="1000"
-        />
-        <h1
-          class="display-3 hero-title"
-          data-aos="fade-up"
-          data-aos-delay="200"
-        >
-          <span class="gradient-text">guweh</span>
-        </h1>
-        <p class="lead hero-subtitle" data-aos="fade-up" data-aos-delay="400">
-          <i class="fas fa-gamepad me-2"></i>MLBB Tag:
-          <span class="highlight-text">zama</span>
-        </p>
-        <div class="hero-badges" data-aos="fade-up" data-aos-delay="600">
-          <span class="badge-custom"
-            ><i class="fas fa-star"></i> Mythical Immortal</span
-          >
-          <span class="badge-custom"
-            ><i class="fas fa-trophy"></i> Top 8 Indonesia</span
-          >
-          <span class="badge-custom"
-            ><i class="fas fa-fire"></i> Harith Main</span
-          >
-        </div>
-        <div class="social-links" data-aos="fade-up" data-aos-delay="800">
-          <a
-            href="https://www.instagram.com/sorzama/"
-            target="_blank"
-            class="social-icon"
-          >
-            <i class="fab fa-instagram"></i>
-          </a>
-          <a href="#" class="social-icon">
-            <i class="fab fa-youtube"></i>
-          </a>
-          <a href="#" class="social-icon">
-            <i class="fab fa-twitch"></i>
-          </a>
-          <a href="#" class="social-icon">
-            <i class="fab fa-discord"></i>
-          </a>
-        </div>
-      </div>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path
-          fill="#ffffff"
-          fill-opacity="1"
-          d="M0,192L48,160C96,128,192,64,288,32C384,0,480,0,576,42.7C672,85,768,171,864,186.7C960,203,1056,149,1152,138.7C1248,128,1344,160,1392,176L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
-        ></path>
-      </svg>
-    </section>
-    <!-- Akhir Jumbotron -->
-
-    <!-- About -->
-    <section id="about">
+    <!-- Hero Section -->
+    <section class="hero" id="home">
       <div class="container">
-        <div class="row text-center mb-5">
-          <div class="col" data-aos="fade-down">
-            <h2 class="section-title">
-              <span class="title-icon"><i class="fas fa-user-circle"></i></span>
-              About Me
-            </h2>
-            <div class="title-underline"></div>
-          </div>
-        </div>
-        <div class="row align-items-center mb-5">
-          <div class="col-md-6" data-aos="fade-right" data-aos-delay="200">
-            <div class="about-card">
-              <div class="card-icon">
-                <i class="fas fa-gamepad"></i>
-              </div>
-              <h4>The Beginning</h4>
-              <p>
-                I started playing Mobile Legends: Bang Bang since season 6
-                (2017), immediately fallen in love with the game because I also
-                play other MOBA games on PC like Dota 2 and League of Legends.
-              </p>
+        <div class="hero-content">
+          <div class="hero-text" data-aos="fade-right" data-aos-duration="1000">
+            <p class="hero-greeting">Hi, I'm</p>
+            <h1 class="hero-title">
+              Abshar Ilham<br />
+              <span class="gradient-text">Zamakhsyari</span>
+            </h1>
+            <div class="hero-subtitle">
+              <span class="typing-text"></span>
+              <span class="cursor">|</span>
             </div>
-          </div>
-          <div class="col-md-6" data-aos="fade-left" data-aos-delay="400">
-            <div class="about-card">
-              <div class="card-icon">
-                <i class="fas fa-magic"></i>
-              </div>
-              <h4>Harith Specialist</h4>
-              <p>
-                My journey playing MLBB is so fun. I started playing Harith in
-                2019, and I've been spamming him ever since. My Harith winrate
-                is
-                <span class="highlight-text">64.0%</span> with
-                <span class="highlight-text">1693 matches</span> currently.
-              </p>
+            <p class="hero-description">
+              A passionate Front-End Developer with a focus on creating
+              beautiful, responsive, and functional web applications. I
+              transform designs into clean code and love tackling complex
+              technical challenges.
+            </p>
+            <div class="hero-buttons">
+              <a href="#projects" class="btn btn-primary">
+                <i class="fas fa-briefcase"></i>
+                View Projects
+              </a>
+              <a href="#contact" class="btn btn-secondary">
+                <i class="fas fa-envelope"></i>
+                Contact Me
+              </a>
             </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-4" data-aos="flip-left" data-aos-delay="200">
-            <div class="feature-box">
-              <div class="feature-icon">
-                <i class="fas fa-crosshairs"></i>
-              </div>
-              <h5>Strategic Mind</h5>
-              <p>Expert in macro gameplay and team coordination</p>
-            </div>
-          </div>
-          <div class="col-md-4" data-aos="flip-left" data-aos-delay="400">
-            <div class="feature-box">
-              <div class="feature-icon">
-                <i class="fas fa-bolt"></i>
-              </div>
-              <h5>Lightning Reflexes</h5>
-              <p>Quick decision making in high-pressure situations</p>
-            </div>
-          </div>
-          <div class="col-md-4" data-aos="flip-left" data-aos-delay="600">
-            <div class="feature-box">
-              <div class="feature-icon">
-                <i class="fas fa-users"></i>
-              </div>
-              <h5>Team Player</h5>
-              <p>Excellent communication and synergy with teammates</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path
-          fill="#d9f7ec"
-          fill-opacity="1"
-          d="M0,32L60,53.3C120,75,240,117,360,154.7C480,192,600,224,720,197.3C840,171,960,85,1080,58.7C1200,32,1320,64,1380,80L1440,96L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"
-        ></path>
-      </svg>
-    </section>
-    <!-- Akhir About -->
-
-    <!-- Stats Section -->
-    <section id="stats">
-      <div class="container">
-        <div class="row text-center mb-5">
-          <div class="col" data-aos="fade-down">
-            <h2 class="section-title">
-              <span class="title-icon"><i class="fas fa-chart-bar"></i></span>
-              Player Statistics
-            </h2>
-            <div class="title-underline"></div>
-          </div>
-        </div>
-        <div class="row g-4">
-          <div
-            class="col-md-3 col-sm-6"
-            data-aos="zoom-in"
-            data-aos-delay="100"
-          >
-            <div class="stat-card">
-              <div class="stat-icon">
-                <i class="fas fa-trophy"></i>
-              </div>
-              <div class="stat-number" data-target="1693">0</div>
-              <div class="stat-label">Total Matches</div>
+            <div class="social-links">
+              <a
+                href="mailto:zamassor@gmail.com"
+                class="social-link"
+                target="_blank"
+                aria-label="Email"
+              >
+                <i class="fas fa-envelope"></i>
+              </a>
+              <a
+                href="https://github.com/zamassor"
+                class="social-link"
+                target="_blank"
+                aria-label="GitHub"
+              >
+                <i class="fab fa-github"></i>
+              </a>
+              <a
+                href="https://www.instagram.com/sorzama/"
+                class="social-link"
+                target="_blank"
+                aria-label="Instagram"
+              >
+                <i class="fab fa-instagram"></i>
+              </a>
             </div>
           </div>
           <div
-            class="col-md-3 col-sm-6"
-            data-aos="zoom-in"
+            class="hero-image"
+            data-aos="fade-left"
+            data-aos-duration="1000"
             data-aos-delay="200"
           >
-            <div class="stat-card">
-              <div class="stat-icon">
-                <i class="fas fa-percentage"></i>
-              </div>
-              <div class="stat-number" data-target="64">0</div>
-              <div class="stat-label">Win Rate %</div>
-            </div>
-          </div>
-          <div
-            class="col-md-3 col-sm-6"
-            data-aos="zoom-in"
-            data-aos-delay="300"
-          >
-            <div class="stat-card">
-              <div class="stat-icon">
-                <i class="fas fa-star"></i>
-              </div>
-              <div class="stat-number" data-target="8">0</div>
-              <div class="stat-label">Top Rank</div>
-            </div>
-          </div>
-          <div
-            class="col-md-3 col-sm-6"
-            data-aos="zoom-in"
-            data-aos-delay="400"
-          >
-            <div class="stat-card">
-              <div class="stat-icon">
-                <i class="fas fa-calendar"></i>
-              </div>
-              <div class="stat-number" data-target="7">0</div>
-              <div class="stat-label">Years Playing</div>
+            <div class="image-wrapper">
+              <img
+                src="img/zama.jpg"
+                alt="Abshar Ilham Zamakhsyari"
+                class="profile-img"
+              />
+              <div class="image-decoration"></div>
             </div>
           </div>
         </div>
       </div>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path
-          fill="#d9f7ec"
-          fill-opacity="1"
-          d="M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,112C672,96,768,96,864,112C960,128,1056,160,1152,165.3C1248,171,1344,149,1392,138.7L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
-        ></path>
-      </svg>
-    </section>
-    <!-- Akhir Stats -->
-
-    <!-- Achievements -->
-    <section id="achievements">
-      <div class="container">
-        <div class="row text-center mb-5">
-          <div class="col" data-aos="fade-down">
-            <h2 class="section-title">
-              <span class="title-icon"><i class="fas fa-medal"></i></span>
-              My Achievements
-            </h2>
-            <div class="title-underline"></div>
-          </div>
+      <div class="scroll-indicator">
+        <div class="mouse">
+          <div class="wheel"></div>
         </div>
-        <div class="row g-4">
-          <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
-            <div class="achievement-card">
-              <div class="achievement-badge">
-                <i class="fas fa-star"></i>
-              </div>
-              <div class="achievement-img-wrapper">
-                <img src="img/ach-1.jpeg" class="card-img-top" alt="ach 1" />
-                <div class="achievement-overlay">
-                  <i class="fas fa-search-plus"></i>
+        <p>Scroll Down</p>
+      </div>
+    </section>
+    <!-- End Hero -->
+
+    <!-- About -->
+    <section id="about" class="about-section">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <span class="section-tag">Get To Know</span>
+          <h2 class="section-title">About Me</h2>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="about-content">
+          <div class="about-text" data-aos="fade-right" data-aos-delay="200">
+            <p class="about-intro">
+              Halo! Saya <strong>Abshar Ilham Zamakhsyari</strong>, biasa
+              dipanggil <strong>Zama</strong>. Saya adalah seorang
+              <span class="highlight">Programmer Analyst</span> dengan fokus
+              utama pada <span class="highlight">Front-End Development</span>.
+            </p>
+            <p>
+              Saya adalah seorang problem solver yang adaptif dan memiliki
+              inisiatif tinggi. Saya beralih karier dari Ilmu Kelautan ke
+              Computer Science karena melihat potensi besar di dunia IT. Saat
+              ini, saya sedang menempuh pendidikan S1 Computer Science di Binus
+              Online, sambil mengaplikasikan ilmu saya secara profesional di
+              lingkungan kerja.
+            </p>
+            <p>
+              Saya menikmati proses menerjemahkan desain menjadi kode yang
+              bersih, responsif, dan fungsional. Saya selalu antusias untuk
+              belajar hal baru dan tidak takut untuk mendalami tantangan teknis
+              yang kompleks.
+            </p>
+
+            <div class="about-highlights">
+              <div
+                class="highlight-item"
+                data-aos="fade-up"
+                data-aos-delay="300"
+              >
+                <div class="highlight-icon">
+                  <i class="fas fa-lightbulb"></i>
+                </div>
+                <div class="highlight-content">
+                  <h4>Problem Solver</h4>
+                  <p>Adaptif dengan inisiatif tinggi</p>
                 </div>
               </div>
-              <div class="card-body">
-                <h5 class="achievement-title">Esports Star</h5>
-                <p class="card-text">
-                  Received the title
-                  <span class="highlight-text">"Indonesian Esports Star"</span>
-                  and <span class="highlight-text">"Indonesia Top 8"</span>.
-                </p>
-                <div class="achievement-date">
-                  <i class="far fa-calendar-alt me-2"></i>2023
+              <div
+                class="highlight-item"
+                data-aos="fade-up"
+                data-aos-delay="400"
+              >
+                <div class="highlight-icon">
+                  <i class="fas fa-rocket"></i>
+                </div>
+                <div class="highlight-content">
+                  <h4>Career Switcher</h4>
+                  <p>Dari Ilmu Kelautan ke IT</p>
+                </div>
+              </div>
+              <div
+                class="highlight-item"
+                data-aos="fade-up"
+                data-aos-delay="500"
+              >
+                <div class="highlight-icon">
+                  <i class="fas fa-code"></i>
+                </div>
+                <div class="highlight-content">
+                  <h4>Clean Code Enthusiast</h4>
+                  <p>Kode yang bersih & fungsional</p>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
-            <div class="achievement-card">
-              <div class="achievement-badge">
-                <i class="fas fa-crown"></i>
+
+          <div
+            class="about-education"
+            data-aos="fade-left"
+            data-aos-delay="200"
+          >
+            <div class="education-card">
+              <div class="education-icon">
+                <i class="fas fa-graduation-cap"></i>
               </div>
-              <div class="achievement-img-wrapper">
-                <img src="img/ach-2.jpeg" class="card-img-top" alt="ach 2" />
-                <div class="achievement-overlay">
-                  <i class="fas fa-search-plus"></i>
+              <h3>Education & Background</h3>
+
+              <div class="education-item">
+                <div class="education-header">
+                  <h4>S1 Computer Science</h4>
+                  <span class="education-year">2025 - Present</span>
                 </div>
-              </div>
-              <div class="card-body">
-                <h5 class="achievement-title">Mythical Immortal</h5>
-                <p class="card-text">
-                  First time reaching the highest rank in game
-                  <span class="highlight-text">"Mythical Immortal"</span>.
+                <p class="education-school">
+                  BINUS University (Online Learning)
                 </p>
-                <div class="achievement-date">
-                  <i class="far fa-calendar-alt me-2"></i>2022
+              </div>
+
+              <div class="education-item">
+                <div class="education-header">
+                  <h4>Self-Taught Developer</h4>
+                  <span class="education-year">Mid 2024 - Present</span>
                 </div>
+                <p class="education-school">
+                  Membangun fondasi kuat melalui kursus
+                  <strong>CS50 dari Harvard University</strong>, yang mencakup
+                  konsep fundamental ilmu komputer.
+                </p>
               </div>
             </div>
-          </div>
-          <div class="col-md-4" data-aos="fade-up" data-aos-delay="500">
-            <div class="achievement-card">
-              <div class="achievement-badge">
-                <i class="fas fa-history"></i>
+
+            <div class="goals-card" data-aos="fade-up" data-aos-delay="400">
+              <div class="goals-icon">
+                <i class="fas fa-bullseye"></i>
               </div>
-              <div class="achievement-img-wrapper">
-                <img src="img/ach-3.jpeg" class="card-img-top" alt="ach 3" />
-                <div class="achievement-overlay">
-                  <i class="fas fa-search-plus"></i>
-                </div>
-              </div>
-              <div class="card-body">
-                <h5 class="achievement-title">Seasons Archive</h5>
-                <p class="card-text">
-                  Collection of all competitive seasons and memorable moments
-                  throughout my MLBB journey.
-                </p>
-                <div class="achievement-date">
-                  <i class="far fa-calendar-alt me-2"></i>2017 - Present
-                </div>
-              </div>
+              <h3>My Goals</h3>
+              <p>
+                Saya memiliki motivasi tinggi untuk terus berkembang di industri
+                ini. Tujuan jangka panjang saya adalah menjadi seorang
+                <strong>programmer profesional yang sangat ahli</strong>, tidak
+                hanya di front-end tetapi juga menguasai backend
+                (<strong>full-stack</strong>).
+              </p>
+              <p class="goals-quote">
+                <i class="fas fa-quote-left"></i>
+                Saya percaya bahwa bidang IT memiliki potensi luar biasa untuk
+                masa depan, dan saya berkomitmen untuk belajar dengan maksimal
+                agar dapat berkontribusi pada proyek-proyek yang kompleks dan
+                berdampak.
+                <i class="fas fa-quote-right"></i>
+              </p>
             </div>
           </div>
         </div>
       </div>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path
-          fill="#ffffff"
-          fill-opacity="1"
-          d="M0,192L48,181.3C96,171,192,149,288,149.3C384,149,480,171,576,149.3C672,128,768,64,864,32C960,0,1056,0,1152,37.3C1248,75,1344,149,1392,186.7L1440,224L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
-        ></path>
-      </svg>
     </section>
-    <!-- Akhir Achievements -->
+    <!-- End About -->
 
-    <!-- Contact -->
-    <section id="contact">
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
       <div class="container">
-        <div class="row text-center mb-5">
-          <div class="col" data-aos="fade-down">
-            <h2 class="section-title">
-              <span class="title-icon"><i class="fas fa-paper-plane"></i></span>
-              Contact Me
-            </h2>
-            <div class="title-underline"></div>
-            <p class="section-subtitle">
-              Let's connect and discuss MLBB strategies or collaborations!
+        <div class="section-header" data-aos="fade-up">
+          <span class="section-tag">What I Know</span>
+          <h2 class="section-title">Skills & Workflow</h2>
+          <div class="section-divider"></div>
+          <p class="section-description">
+            Saya tidak hanya fokus pada penulisan kode, tetapi juga pada
+            bagaimana kode tersebut dikelola, dikolaborasikan, dan dirilis
+            secara profesional.
+          </p>
+        </div>
+
+        <div class="skills-content">
+          <div class="skills-category" data-aos="fade-up" data-aos-delay="100">
+            <div class="category-header">
+              <div class="category-icon">
+                <i class="fas fa-code"></i>
+              </div>
+              <h3>Core Technologies</h3>
+            </div>
+            <div class="skills-grid">
+              <div class="skill-item">
+                <div class="skill-icon">
+                  <i class="fab fa-html5"></i>
+                </div>
+                <span>HTML5</span>
+              </div>
+              <div class="skill-item">
+                <div class="skill-icon">
+                  <i class="fab fa-css3-alt"></i>
+                </div>
+                <span>CSS3</span>
+              </div>
+              <div class="skill-item">
+                <div class="skill-icon">
+                  <i class="fab fa-js"></i>
+                </div>
+                <span>JavaScript (ES6+)</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="skills-category" data-aos="fade-up" data-aos-delay="200">
+            <div class="category-header">
+              <div class="category-icon">
+                <i class="fas fa-layer-group"></i>
+              </div>
+              <h3>Framework & Libraries</h3>
+            </div>
+            <div class="skills-grid">
+              <div class="skill-item featured">
+                <div class="skill-icon">
+                  <i class="fab fa-vuejs"></i>
+                </div>
+                <span>Vue.js</span>
+                <span class="skill-badge">Primary</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="skills-category" data-aos="fade-up" data-aos-delay="300">
+            <div class="category-header">
+              <div class="category-icon">
+                <i class="fas fa-code-branch"></i>
+              </div>
+              <h3>Version Control & Workflow</h3>
+            </div>
+            <div class="workflow-items">
+              <div class="workflow-item">
+                <div class="workflow-icon">
+                  <i class="fab fa-git-alt"></i>
+                </div>
+                <div class="workflow-content">
+                  <h4>Git & GitHub</h4>
+                  <p>
+                    Mahir menggunakan Git dan GitHub untuk kolaborasi tim
+                    profesional
+                  </p>
+                </div>
+              </div>
+              <div class="workflow-item">
+                <div class="workflow-icon">
+                  <i class="fas fa-project-diagram"></i>
+                </div>
+                <div class="workflow-content">
+                  <h4>Feature Branching</h4>
+                  <p>
+                    Menerapkan alur kerja feature branching: membuat branch baru
+                    dari main, push setelah selesai, dan review oleh Project
+                    Leader sebelum merge
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="skills-category" data-aos="fade-up" data-aos-delay="400">
+            <div class="category-header">
+              <div class="category-icon">
+                <i class="fas fa-rocket"></i>
+              </div>
+              <h3>Deployment</h3>
+            </div>
+            <div class="skills-grid">
+              <div class="skill-item">
+                <div class="skill-icon">
+                  <i class="fas fa-cloud"></i>
+                </div>
+                <span>Vercel</span>
+              </div>
+            </div>
+            <p class="category-note">
+              Berpengalaman mendeploy aplikasi web ke platform hosting modern
             </p>
           </div>
         </div>
-        <div class="row justify-content-center">
-          <div class="col-md-8">
-            <div
-              class="contact-form-wrapper"
-              data-aos="zoom-in"
-              data-aos-delay="200"
-            >
-              <form id="contactForm">
-                <div class="row">
-                  <div class="col-md-6 mb-4">
-                    <div class="form-floating">
-                      <input
-                        type="text"
-                        class="form-control form-control-custom"
-                        id="name"
-                        placeholder="Your Name"
-                        required
-                      />
-                      <label for="name"
-                        ><i class="fas fa-user me-2"></i>Name</label
-                      >
-                    </div>
-                  </div>
-                  <div class="col-md-6 mb-4">
-                    <div class="form-floating">
-                      <input
-                        type="email"
-                        class="form-control form-control-custom"
-                        id="email"
-                        placeholder="Your Email"
-                        required
-                      />
-                      <label for="email"
-                        ><i class="fas fa-envelope me-2"></i>Email</label
-                      >
-                    </div>
-                  </div>
+      </div>
+    </section>
+    <!-- End Skills -->
+
+    <!-- Projects -->
+    <section id="projects" class="projects-section">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <span class="section-tag">My Work</span>
+          <h2 class="section-title">Featured Projects</h2>
+          <div class="section-divider"></div>
+          <p class="section-description">
+            Berikut adalah beberapa proyek yang menunjukkan kemampuan saya, baik
+            dalam membangun dari awal maupun berkontribusi dalam tim.
+          </p>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Project 1: GCGScola -->
+          <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="project-image">
+              <img src="img/gcgscola.jpg" alt="GCGScola ERP Application" />
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a
+                    href="https://app.gcgscola.id"
+                    target="_blank"
+                    class="project-link"
+                    aria-label="Visit GCGScola"
+                  >
+                    <i class="fas fa-external-link-alt"></i>
+                  </a>
                 </div>
-                <div class="mb-4">
-                  <div class="form-floating">
-                    <textarea
-                      class="form-control form-control-custom"
-                      id="pesan"
-                      placeholder="Your Message"
-                      style="height: 150px"
-                      required
-                    ></textarea>
-                    <label for="pesan"
-                      ><i class="fas fa-comment me-2"></i>Message</label
-                    >
-                  </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <div class="project-tags">
+                <span class="project-tag professional">Professional</span>
+                <span class="project-tag">Vue.js</span>
+              </div>
+              <h3 class="project-title">GCGScola - ERP School Management</h3>
+              <p class="project-description">
+                Berkontribusi dalam pengembangan aplikasi manajemen sekolah
+                berbasis ERP (Odoo di backend). Bertanggung jawab memperbaiki
+                bug front-end dan menyempurnakan UI agar lebih intuitif dan
+                menarik.
+              </p>
+              <div class="project-meta">
+                <div class="project-role">
+                  <i class="fas fa-user-tie"></i>
+                  <span>Front-End Programmer (Tim Profesional)</span>
                 </div>
-                <div class="text-center">
-                  <button type="submit" class="btn btn-custom btn-lg">
-                    <i class="fas fa-paper-plane me-2"></i>Send Message
-                    <span class="btn-shine"></span>
-                  </button>
+                <div class="project-tech">
+                  <i class="fas fa-tools"></i>
+                  <span>Vue.js, Odoo Backend</span>
                 </div>
-              </form>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2: RKH Law Office -->
+          <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="project-image">
+              <img src="img/rkhlawoffice.jpg" alt="RKH Law Office Website" />
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a
+                    href="https://rkhlawoffice.vercel.app"
+                    target="_blank"
+                    class="project-link"
+                    aria-label="Visit RKH Law Office"
+                  >
+                    <i class="fas fa-external-link-alt"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <div class="project-tags">
+                <span class="project-tag client">Client Project</span>
+                <span class="project-tag">Vanilla JS</span>
+              </div>
+              <h3 class="project-title">RKH Law Office - Corporate Website</h3>
+              <p class="project-description">
+                Membangun website profil perusahaan dari awal untuk sebuah firma
+                hukum. Mendesain dan mengembangkan seluruh tampilan website,
+                serta berkoordinasi dengan klien untuk menerjemahkan kebutuhan
+                bisnis menjadi desain teknis.
+              </p>
+              <div class="project-meta">
+                <div class="project-role">
+                  <i class="fas fa-user-tie"></i>
+                  <span>Full-Stack Developer (Independen)</span>
+                </div>
+                <div class="project-tech">
+                  <i class="fas fa-tools"></i>
+                  <span>HTML, CSS, JavaScript (From Scratch)</span>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-        <div class="row mt-5">
-          <div
-            class="col-md-4 text-center mb-4"
-            data-aos="fade-up"
-            data-aos-delay="300"
-          >
-            <div class="contact-info-box">
-              <div class="contact-info-icon">
+      </div>
+    </section>
+    <!-- End Projects -->
+
+    <!-- Contact -->
+    <section id="contact" class="contact-section">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <span class="section-tag">Get In Touch</span>
+          <h2 class="section-title">Let's Work Together</h2>
+          <div class="section-divider"></div>
+          <p class="section-description">
+            Tertarik untuk berkolaborasi atau punya proyek yang ingin
+            dikerjakan? Jangan ragu untuk menghubungi saya!
+          </p>
+        </div>
+
+        <div class="contact-content">
+          <div class="contact-info" data-aos="fade-right" data-aos-delay="100">
+            <div class="contact-card">
+              <div class="contact-icon">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <h3>Email</h3>
+              <a href="mailto:zamassor@gmail.com">zamassor@gmail.com</a>
+            </div>
+
+            <div class="contact-card">
+              <div class="contact-icon">
+                <i class="fab fa-github"></i>
+              </div>
+              <h3>GitHub</h3>
+              <a href="https://github.com/zamassor" target="_blank"
+                >@zamassor</a
+              >
+            </div>
+
+            <div class="contact-card">
+              <div class="contact-icon">
+                <i class="fab fa-instagram"></i>
+              </div>
+              <h3>Instagram</h3>
+              <a href="https://www.instagram.com/sorzama/" target="_blank"
+                >@sorzama</a
+              >
+            </div>
+
+            <div class="contact-card">
+              <div class="contact-icon">
                 <i class="fas fa-map-marker-alt"></i>
               </div>
-              <h5>Location</h5>
+              <h3>Location</h3>
               <p>Indonesia</p>
             </div>
           </div>
-          <div
-            class="col-md-4 text-center mb-4"
-            data-aos="fade-up"
-            data-aos-delay="400"
-          >
-            <div class="contact-info-box">
-              <div class="contact-info-icon">
-                <i class="fas fa-envelope"></i>
+
+          <div class="contact-cta" data-aos="fade-left" data-aos-delay="200">
+            <div class="cta-card">
+              <h3>Ready to start a project?</h3>
+              <p>
+                Saya terbuka untuk peluang pekerjaan baru, baik freelance maupun
+                full-time. Mari kita diskusikan bagaimana saya bisa membantu
+                mewujudkan proyek Anda!
+              </p>
+              <div class="cta-buttons">
+                <a href="mailto:zamassor@gmail.com" class="btn btn-primary">
+                  <i class="fas fa-envelope"></i>
+                  Send Email
+                </a>
+                <a
+                  href="https://github.com/zamassor"
+                  target="_blank"
+                  class="btn btn-secondary"
+                >
+                  <i class="fab fa-github"></i>
+                  View GitHub
+                </a>
               </div>
-              <h5>Email</h5>
-              <p>contact@zama.com</p>
-            </div>
-          </div>
-          <div
-            class="col-md-4 text-center mb-4"
-            data-aos="fade-up"
-            data-aos-delay="500"
-          >
-            <div class="contact-info-box">
-              <div class="contact-info-icon">
-                <i class="fas fa-gamepad"></i>
+
+              <div class="availability-badge">
+                <div class="status-dot"></div>
+                <span>Available for new opportunities</span>
               </div>
-              <h5>MLBB Tag</h5>
-              <p>zama</p>
             </div>
           </div>
         </div>
       </div>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path
-          fill="#20c997"
-          fill-opacity="1"
-          d="M0,0L48,32C96,64,192,128,288,154.7C384,181,480,171,576,154.7C672,139,768,117,864,101.3C960,85,1056,75,1152,74.7C1248,75,1344,85,1392,90.7L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
-        ></path>
-      </svg>
     </section>
-    <!-- Akhir Contact  -->
+    <!-- End Contact -->
 
     <!-- Footer -->
-    <footer class="footer-custom">
+    <footer class="footer">
       <div class="container">
-        <div class="row">
-          <div class="col-md-4 mb-4">
-            <h5 class="footer-title">
-              <i class="fas fa-gamepad me-2"></i>zama
-            </h5>
-            <p class="footer-text">
-              Professional MLBB player specializing in Harith. Reaching new
-              heights in the Indonesian esports scene.
+        <div class="footer-content">
+          <div class="footer-brand">
+            <h3>Zama<span class="brand-dot">.</span></h3>
+            <p>
+              Front-End Developer passionate about creating beautiful and
+              functional web experiences.
             </p>
-            <div class="footer-social">
-              <a href="https://www.instagram.com/sorzama/" target="_blank"
-                ><i class="fab fa-instagram"></i
-              ></a>
-              <a href="#"><i class="fab fa-youtube"></i></a>
-              <a href="#"><i class="fab fa-twitch"></i></a>
-              <a href="#"><i class="fab fa-discord"></i></a>
-            </div>
           </div>
-          <div class="col-md-4 mb-4">
-            <h5 class="footer-title">Quick Links</h5>
-            <ul class="footer-links">
-              <li>
-                <a href="#"><i class="fas fa-chevron-right me-2"></i>Home</a>
-              </li>
-              <li>
-                <a href="#about"
-                  ><i class="fas fa-chevron-right me-2"></i>About</a
-                >
-              </li>
-              <li>
-                <a href="#stats"
-                  ><i class="fas fa-chevron-right me-2"></i>Stats</a
-                >
-              </li>
-              <li>
-                <a href="#achievements"
-                  ><i class="fas fa-chevron-right me-2"></i>Achievements</a
-                >
-              </li>
-              <li>
-                <a href="#contact"
-                  ><i class="fas fa-chevron-right me-2"></i>Contact</a
-                >
-              </li>
-            </ul>
+
+          <div class="footer-links">
+            <h4>Quick Links</h4>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
           </div>
-          <div class="col-md-4 mb-4">
-            <h5 class="footer-title">Newsletter</h5>
-            <p class="footer-text">
-              Subscribe to get updates on tournaments and streams!
-            </p>
-            <form class="newsletter-form">
-              <div class="input-group">
-                <input
-                  type="email"
-                  class="form-control"
-                  placeholder="Your email"
-                />
-                <button class="btn btn-newsletter" type="submit">
-                  <i class="fas fa-paper-plane"></i>
-                </button>
-              </div>
-            </form>
-          </div>
-        </div>
-        <hr class="footer-divider" />
-        <div class="row">
-          <div class="col text-center">
-            <p class="footer-copyright">
-              <i class="fas fa-heart text-danger"></i> Created with
-              determination by
+
+          <div class="footer-social">
+            <h4>Connect</h4>
+            <div class="social-icons">
+              <a
+                href="mailto:zamassor@gmail.com"
+                aria-label="Email"
+                target="_blank"
+              >
+                <i class="fas fa-envelope"></i>
+              </a>
+              <a
+                href="https://github.com/zamassor"
+                aria-label="GitHub"
+                target="_blank"
+              >
+                <i class="fab fa-github"></i>
+              </a>
               <a
                 href="https://www.instagram.com/sorzama/"
+                aria-label="Instagram"
                 target="_blank"
-                class="footer-link-highlight"
-                >Abshar</a
               >
-              © 2024
-            </p>
+                <i class="fab fa-instagram"></i>
+              </a>
+            </div>
           </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>
+            &copy; 2024 Abshar Ilham Zamakhsyari. Built with passion and
+            dedication.
+          </p>
         </div>
       </div>
     </footer>
-    <!-- Akhir Footer -->
-
-    <!-- Bootstrap JS -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
+    <!-- End Footer -->
 
     <!-- AOS Animation Library -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
